@@ -3,9 +3,10 @@
 #include <time.h>
 
 /**
-* main - Entry point
-* Return : Always 0 (Sucess)
-*/
+ * main - Prints the lowercase alphabet in reverse using putchar
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	char low;
