@@ -16,13 +16,8 @@ int main(void)
 	int x;
 
 	for (x = 0; x < 10; x++)
-{
-	printf ("%d", x);
-	if (x < 9)
-{
-	printf (",");
-}
-}
-	printf ("\n");
+	printf("%d", x);
+
+	printf("\n");
 	return (0);
 }
