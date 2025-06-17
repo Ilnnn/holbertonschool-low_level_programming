@@ -1,6 +1,11 @@
 #include <stdio.h>
+/**
+ * main - Prints the lowercase alphabet using putchar
+ *
+ * Return: Always 0 (Success)
+ */
 
-	int main(void)
+int main(void)
 {
 	char alphabet;
 
