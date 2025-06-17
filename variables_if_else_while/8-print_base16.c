@@ -1,10 +1,13 @@
 #include <stdio.h>
 
 /**
- * main - print base sixteen
+ * main - Prints all hexadecimal numbers (base 16) in lowercase
  *
- * return (0)
-*/
+ * Description: Uses a loop to print digits 0–9 and letters a–f.
+ * Only the putchar function is used (3 times total).
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
