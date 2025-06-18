@@ -1,6 +1,6 @@
 /**
  * main - Entry point
- *
+ *@c : Character
  * Description: Prints "_putchar" followed by a new line
  * using the custom _putchar function.
  *
