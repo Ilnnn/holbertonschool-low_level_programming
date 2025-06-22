@@ -6,6 +6,7 @@ int _putchar(char c);
 int _isalpha (int c);
 int print_sign(int n);
 int _abs(int a);
+int add(int s, int ss);
 void jack_bauer(void);
 int print_last_digit(int x);
 void print_alphabet(void);
