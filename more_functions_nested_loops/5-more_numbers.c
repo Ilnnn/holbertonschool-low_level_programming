@@ -1,5 +1,11 @@
 #include "main.h"
 #include <stdio.h>
+/**
+ * more_numbers - Affiche 10 fois les nombres de 0 à 14,
+ * suivis d’un saut de ligne à chaque ligne.
+ *
+ * Return: Rien (void).
+ */
 void more_numbers(void)
 {
 	int a;
