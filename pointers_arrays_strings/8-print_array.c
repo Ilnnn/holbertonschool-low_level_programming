@@ -1,28 +1,23 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 /**
- * print_diagsums - prints the sum of the two diagonals
- * @a: pointer
- * @size: size of the array
+ * print_array - Prints n elements of an array of integers
+ * @a: Pointer to the array of integers
+ * @n: Number of elements to print
+ *
+ * Description: This function prints n
  */
-
-void print_diagsums(int *a, int size)
+void print_array(int *a, int n)
 {
-	int n = 0;
-	int s = size - 1;
-	int sum1 = 0;
-	int sum2 = 0;
+	int i;
 
-	while (n <= size * size)
+	for (i = 0; i < n; i++)
 	{
-		sum1 = sum1 + a[n];
-		n = n + size + 1;
+		printf("%d", a[i]);
+		if (i < n - 1)
+		{
+			printf(", ");
+		}
 	}
-
-	while (s < size * size - 1)
-	{
-		sum2 = sum2 + a[s];
-		s = s + size - 1;
-	}
-	printf("%d, %d\n", sum1, sum2);
-}
+	printf("\n");
+} 
