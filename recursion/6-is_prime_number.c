@@ -4,7 +4,7 @@
  * is_prime_number - Vérifie si un nombre est premier.
  *
  * @n: L'entier.
- *@i: Le diviseur courant 
+ *@i: Le diviseur courant
  * Return: 1 si premier, 0 sinon.
  */
 int find_helper(int n, int i);
