@@ -2,10 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _strlen - Returns the length of a string
- * @s: The string to measure
+ * _strdup - Crée une copie allouée dynamiquement dne chaîne de caractèr
+ * @str: Chaîne de caractères à dupliquer
  *
- * Return: The length of the string
+ * Return: Pointeur vers la nouvelle chaîne dupliquée,
+ * ou NULL si l'allocation échoue ou si str est NULL.
  */
 char *_strdup(char *str)
 {
