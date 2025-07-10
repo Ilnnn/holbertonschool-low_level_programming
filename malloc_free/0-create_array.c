@@ -1,7 +1,13 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include "main.h"
-
+/**
+ * create_array - Crée un tableau de `size` caractères avec `c
+ * @size: Taille du tableau
+ * @c: Caractère d'initialisation
+ *
+ * Return: Pointeur du tableau ou NULL
+ */
 char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
