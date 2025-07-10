@@ -1,12 +1,20 @@
 #include "main.h"
 #include <stdlib.h>
-
+/**
+ * string_nconcat - Concatène deux chaînes jusqu�� n octets de la deuxième
+ * @s1: Première chaîne de caractères (peut être NUL
+ * @s2: Deuxième chaîne de caractères (peut être NUL
+ * @n: Nombre maximum d'octets de s2 à concatén
+ *
+ * Return: Pointeur vers la nouvelle chaîne concatén�
+ *NULL si l'allocation échoue
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i = 0, j = 0, k = 0, l = 0;
 	char *str;
 
-	if (s1 == NULL) 
+	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
