@@ -1,6 +1,13 @@
 #include "main.h"
 #include <stdlib.h>
-
+/**
+ * alloc_grid - Alloue une grille 2D d'entiers initialisée à 0
+ * @width: Largeur de la grille (nombre de colonnes)
+ * @height: Hauteur de la grille (nombre de lignes)
+ *
+ * Return: Pointeur vers la grille 2D allouée,
+ *         ou NULL en cas d'échec d'allocation ou si width/height <= 0.
+ */
 int **alloc_grid(int width, int height)
 {
 	int i, j, k, l;
