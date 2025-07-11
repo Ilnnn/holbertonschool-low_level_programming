@@ -1,17 +1,11 @@
 #include "dog.h"
 #include <stddef.h>
 /**
- * struct dog - Structure représentant un chien
- * @name: Le nom du chien
- * @age: L'âge du chien
- * @owner: Le nom du propriétaire du chien
- *
- * Description: Structure contenant les informations principales
- * d’un chien (nom, âge, propriétaire).
- */
-
-/**
- * dog_t - Typedef pour struct dog
+ * init_dog - initialise dog
+ * @d: acceder a la struct
+ * @name: ddd
+ * @age: age
+ * @owner: dldl
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
