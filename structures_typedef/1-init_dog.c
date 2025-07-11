@@ -1,15 +1,14 @@
 #include "dog.h"
 #include <stddef.h>
 /**
- * init_dog - Initializes a variable of type struct dog
- * @d: Pointer to struct dog to initialize
- * @name: Name of the dog
- * @age: Age of the dog
- * @owner: Owner of the dog
+ * init_dog - Initialise une structure de type struct dog
+ * @d: Pointeur vers la structure à initialiser
+ * @name: Nom du chien
+ * @age: Âge du chien
+ * @owner: Nom du propriétaire du chien
  *
- * This function initializes the fields of a struct dog with the given
- * name, age, and owner. If the pointer to struct dog is NULL, the function
- * does nothing.
+ * Description: Cette fonction initialise les champs d'une structure
+ * dog avec les valeurs fournies en paramètres.
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
