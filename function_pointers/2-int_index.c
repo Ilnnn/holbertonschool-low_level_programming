@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+
 /**
  * int_index - searches for an integer in an array
  * @array: pointer to the array of integers
@@ -16,18 +17,18 @@
  * Return: Index of the first matching element, or -1 if no match
  * or invalid input.
  */
+
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i = 0;
+	int i;
 
-	if (size > 0)
+	if (size <= 0 || array == NULL || cmp == NULL)
+		return (-1);
+
+	for (i = 0; i < size; i++)
 	{
-		if (array != NULL && cmp != NULL)
-		{
-			if (cmp(array[i]))
-				return (i);
-			i++;
-		}
+		if (cmp(array[i]) != 0)
+			return (i);
 	}
 
 	return (-1);
