@@ -7,8 +7,9 @@
 #include <unistd.h>
 
 /**
- * struct listint_s - singly linked list
- * @n: integer
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
  * @next: points to the next node
  *
  * Description: singly linked list node structure
@@ -20,7 +21,14 @@ typedef struct list_s
 	unsigned int len;
 	struct list_s *next;
 } list_t;
-
+/**
+ * struct listint_s - singly linked list of integers
+ * @n: integer value
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ * storing integers for Holberton project
+ */
 typedef struct listint_s
 {
 	int n;
