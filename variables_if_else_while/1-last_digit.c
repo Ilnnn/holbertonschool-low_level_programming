@@ -1,29 +1,34 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * Description: Prints the last digit of a random number
+ * and tells if it is greater than 5, equal to 0, or less than 6 and not 0
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n, sn;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	sn = n % 10;
-	printf ("The last digit of the number %d is %d \n", n, sn);
-	if
-		(n > 5)
+	printf("Last digit of %d is %d", n, sn);
+
+	if (sn > 5)
 	{
-		printf ("The last digit of %d is %d and is greater than 5\n", n, sn);
+		printf("and is greater than 5\n");
 	}
-	else if
+	else if (sn == 0)
 	{
-		printf("The last digit of %d is %d and is 0\n", n, sn);
+		printf("and is 0\n");
 	}
-	else (n < 6 && n != 0)
-	
+	else
 	{
-		printf("The last digit of %d is %d and is less than 6 and not 0\n", n, sn);
+		printf("and is less than 6 and not 0 \n");
 	}
 	return (0);
 }
