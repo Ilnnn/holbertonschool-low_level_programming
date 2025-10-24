@@ -12,5 +12,4 @@ char x = 'a';
 		x++;
 	}
 	_putchar('\n');
-	return;
 }
