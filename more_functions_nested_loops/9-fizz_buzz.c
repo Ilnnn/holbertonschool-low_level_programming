@@ -3,10 +3,10 @@
 /**
  * main - prints the numbers from 1 to 100, followed by a new line.
  *
- * Description: For multiples of three, prints "Fizz" instead of the number.
- *              For multiples of five, prints "Buzz" instead of the number.
- *              For numbers which are multiples of both three and five, prints "FizzBuzz".
- *              Each number or word is separated by a space.
+ *	 Description: For multiples of three, prints "Fizz" instead of the number.
+ *	For multiples of five, prints "Buzz" instead of the number.
+ *	For numbers which are multiples of both three and five,prints "FizzBuzz".
+ *	Each number or word is separated by a space.
  *
  * Return: 0 on success.
  */
