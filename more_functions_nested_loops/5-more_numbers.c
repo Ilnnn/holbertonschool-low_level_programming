@@ -11,12 +11,13 @@
 	int u;
 
 	for (d = 0; d < 10; d++)
-
+	{
 		for (u = 0; u <= 14; u++)
 		{
 			if (u >= 10)
 			_putchar('0' + u / 10);
 			_putchar('0' + u % 10);
 		}
-	_putchar('\n');
+			_putchar('\n');
+	}
 }
