@@ -19,8 +19,8 @@ int start = 0;
 {
 		if (s[a] == '-')
 		sign = sign * -1;
-		
-		if (s[a] >= '0' && s[a] <= '9')
+
+	if (s[a] >= '0' && s[a] <= '9')
 	{
 	start = 1;
 	result = result * 10 + (s[a] - '0');
@@ -29,5 +29,5 @@ int start = 0;
 		break;
 		a++;
 }
-	return (result *sign);
-}
+	return (result * sign);
+	}
