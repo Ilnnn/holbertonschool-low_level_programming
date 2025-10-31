@@ -1,5 +1,15 @@
 #include "main.h"
 #include <stdio.h>
+/**
+ * leet - Encodes a string into 1337
+ * @str: The string to encode
+ *
+ * Description: Replaces the letters a, e, o, t, and l
+ * with the numbers 4, 3, 0, 7, and 1 respectively.
+ * Works for both uppercase and lowercase letters.
+ *
+ * Return: Pointer to the modified string
+ */
 char *leet(char *str)
 {
 	char l [] = {'A', 'E', 'O', 'T', 'L'};
