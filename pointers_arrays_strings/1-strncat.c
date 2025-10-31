@@ -1,13 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strncat - concatenates two strings using at most n bytes from src
- * @dest: pointer to destination string
- * @src: pointer to source string
- * @n: maximum number of bytes to use from src
- *
- * Return: pointer to destination string
- */
+* _strncat - Concatenates two strings
+* @dest: String
+* @src: String to add to dest
+* @n: Bytes used
+* Return: dest
+*/
 char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0;
