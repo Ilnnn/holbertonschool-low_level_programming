@@ -1,37 +1,47 @@
-#include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
-char *cap_string(char *s)
+#include "main.h"
+
+/**
+ * cap_string - Capitalizes the first letter of each word
+ * @str: String to modify
+ *
+ * Return: Pointer to modified string
+ */
+char *cap_string(char *str)
 {
 	int i = 0;
-	int j;
-	char spe[] = {' ', '\t', '\n', ',', ';', '.',
-'!', '?', '"', '(', ')', '{', '}'};
-	int nw = 1;
+	size_t j;
+	int is_spe;
+	char spe[] = {' ', '\t', '\n', ',', ';', '.', '!',
+		      '?', '"', '(', ')', '{', '}'};
 
-	while (s[i] != '\0')
+	while (str[i] != '\0')
 	{
-		j = 0;
-		while (spe[j] != '\0')
+		is_spe = 0;
+
+		if (i != 0)
 		{
-			if (s[i] == spe[j])
-		{
-			nw = 1;
-			break;
-		}
-		j++;
-		}
-			if (nw == 1 && s[i] >= 'a' && s[i] <= 'z')
+			j = 0;
+			while (j < (sizeof(spe) / sizeof(spe[0])))
 			{
-				s[i] = s[i] - 32;
-				nw = 0;
+				if (str[i - 1] == spe[j])
+				{
+					is_spe = 1;
+					break;
+				}
+				j++;
 			}
-
-			else if (s[i] >= 'A' && s[i] <= 'Z')
-		{
-			nw = 0;
 		}
 
-	i++;
+		if ((i == 0 && str[i] >= 'a' && str[i] <= 'z') ||
+		    (i != 0 && is_spe && str[i] >= 'a' && str[i] <= 'z'))
+		{
+			str[i] -= ('a' - 'A');
+		}
+
+		i++;
 	}
-	return (s);
+
+	return (str);
 }
