@@ -21,12 +21,12 @@ char *cap_string(char *s)
 		}
 		j++;
 		}
-		if (nw == 1 && (s[i] >= 'a' && s[i] <= 'z'))
+			if (nw == 1 && (s[i] >= 'a' && s[i] <= 'z'))
 		{
 			s[i] = s[i] - 32;
 			nw = 0;
 		}
-		else if (s[i] >= 'A' && s[i] <= 'Z')
+			else if ((s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= 'a' && s[i] <= 'z'))
 		{
 			nw = 0;
 		}
