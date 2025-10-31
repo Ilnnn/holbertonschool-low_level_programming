@@ -26,11 +26,8 @@ char *cap_string(char *s)
 			s[i] = s[i] - 32;
 			nw = 0;
 		}
-			else if ((s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= 'a' && s[i] <= 'z'))
-		{
-			nw = 0;
-		}
+
 	i++;
-}
+	}
 	return (s);
 }
