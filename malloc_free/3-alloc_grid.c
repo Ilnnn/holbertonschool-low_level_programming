@@ -8,6 +8,7 @@ int l = 0;
 int c = 0;
 int i = 0;
 
+
 if (width <= 0)
 return NULL;
 
@@ -16,34 +17,33 @@ return NULL;
 
 tab = malloc(height * sizeof(int *));
 if (tab == NULL)
-return NULL,
+return NULL;
 
 l = 0;
 
 while (l < height)
 {
-tab[l] = malloc(width * sizeof(int));
-if (tab[l] == NULL)
-i = 0;
-l++;
-}
-
+	tab[l] = malloc(width * sizeof(int));
+	if (tab[l] == NULL)
+{
 while (i < l)
 {
-free (tab[l]);
-i++;
+	free (tab[i]);
+	i++;
+
+}
 free(tab);
 return NULL;
+}
 
-	c = 0;
-	while (c < width)
+c = 0;
+while (c < width)
 	{
 		tab[l][c] = 0;
 		c++;
 	}
-	
-	l++;
+		l++;
 }
-return (tab);
 
+return (tab);
 }
