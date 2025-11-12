@@ -1,6 +1,18 @@
 #include <stdio.h>
 #include "main.h"
 #include <stdlib.h>
+/**
+ * string_nconcat - concat s1 et les n premiers caract de s2
+ * @s1: première chaîne
+ * @s2: deuxième chaîne
+ * @n: nombre maximal de caractères à copier depuis s2
+ *
+ * Return: pointeur vers la chaîne concat, NULL si échec
+ *
+ * Description:
+ * Si s1 ou s2 vaut NULL,traités comme des chaînes vides.
+ * La mémoire est allouée dyna pr contenir s1 + min(n,len2) + '\0'.
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i = 0;
