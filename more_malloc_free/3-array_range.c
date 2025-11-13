@@ -1,6 +1,14 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * array_range - crée un tableau d'int de min à max
+ * @min: valeur minimale du tableau
+ * @max: valeur maximale du tableau
+ *
+ * Return: pointeur -> tableau créé ou NULL si min > max
+ *         ou si l'allocation échoue
+ */
 int *array_range(int min, int max)
 {
 	unsigned int i = 0;
