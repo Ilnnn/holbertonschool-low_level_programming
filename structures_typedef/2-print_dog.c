@@ -1,23 +1,27 @@
 #include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * print_dog - affiche les champs d'une structure dog
+ * @d: pointeur vers la structure
+ *
+ * Affiche (nil) si name ou owner est NULL, rien si d est NULL.
+ */
 void print_dog(struct dog *d)
 {
-	int d;
-
 	if (d == NULL)
-	printf("");
+	return;
 
 	if (d->name == NULL)
 	printf("Name: (nil)");
 	else
-	printf("Name:" d->name);
+	printf("Name: %s\n", d->name);
 
-	printf("Age" d->age)
+	printf("Age: %f\n", d->age);
 
 	if (d->owner == NULL)
 	printf("Owner (nil)");
 
 	else
-	printf("Owner" d->owner);
+	printf("Owner %s\n", d->owner);
 }
