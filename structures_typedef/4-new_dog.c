@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include "dog.h"
 #include "stdlib.h"
+/**
+ * new_dog - crée un nouveau dog
+ * @name: nom du chien
+ * @age: âge du chien
+ * @owner: propriétaire du chien
+ *
+ * Return: pointeur vers le nouveau dog, ou NULL si échec
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
