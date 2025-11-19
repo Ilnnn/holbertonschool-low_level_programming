@@ -16,8 +16,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	function_pointers = get_op_func(argv[2])
-	function_pointers = get_op_func
+	function_pointers = get_op_func(argv[2]);
 
 	if (function_pointers == NULL)
 	{
@@ -28,14 +27,11 @@ int main(int argc, char *argv[])
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[3]);
 
-	if
-	{
-		(argv[2][0] == "/" && argv[2][1] == '\0');
-			||
-		(argv[2][0] == "%" && argv[2][1] == '\0');
-			&&
-		n2 == 0
+	if (((argv[2][0] == '/' && argv[2][1] == '\0') ||
 
+		(argv[2][0] == '%' && argv[2][1] == '\0')) &&
+		n2 == 0);
+	{
 		printf("Error\n");
 		exit(100);
 	}
