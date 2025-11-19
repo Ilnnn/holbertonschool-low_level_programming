@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 	int n1;
 	int n2;
 	int summ;
-	int (*function_pointers) (int, int);
+	int (*function_pointers)(int, int);
 
 	if (argc != 4)
 	{
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 	if (((argv[2][0] == '/' && argv[2][1] == '\0') ||
 
 		(argv[2][0] == '%' && argv[2][1] == '\0')) &&
-		n2 == 0);
+		n2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
@@ -39,5 +39,5 @@ int main(int argc, char *argv[])
 	summ = function_pointers(n1, n2);
 
 	printf("%d\n", summ);
-	return(0);
+	return (0);
 }
