@@ -1,50 +1,45 @@
 #include <stdarg.h>
 #include <stdio.h>
-#include "variadic_functions.h"
-typedef void (*printer_f)(va_list *ap)
+
+void print_all(const char * const format, ...)
 {
-	va_list args;
-	char *s;
-	char c;
-	int i;
-	float f;
-	int first = 1;
-	const char *p;
+   va_list args;
+   char c;
+   int i;
+   int first = 1;
+   const char *p;
 
-	va_start (args, format);
+	va_start(args, format);
 	p = format;
-	
-	while (p && *p)
-	{
-		if (!first)
-		printf (", ");
 
-		if (*p == 'c' || *p == 'i' || *p == 'f' || *p == 's')
+	while (p && *p)
+{
+    if (!first)
+	{
+		printf(", ");
+	}
+
+	if (*p == 'c' || *p == 'i')
+	{
+	
+		if (*p == 'c')
+    
 		{
-			if (*p == 'c')
-			{
-				c = (char)va_arg(args, int);
-				printf("%c", c);
-			}
-			if (*p == 'i')
-		}
+			c = (char)va_arg(args, int);
+			printf("%c", c);
+        }
+
+        if (*p == 'i')
+
+		{
 		i = va_arg(args, int);
 		printf("%d", i);
+		}
+			first = 0;
 	}
-	if (*p == 'f')
-	{
-		f = (float)va_arg(args, double);
-		printf("%f", f);
-	}
-	if (*p == 's')
-	{
-		s = va_arg(args, char *)
-		printf("%s", s ? s : "(nil)");
-	}
-		first = 0;
-	}
-	p++;
+			p++;
 }
-va_end(args);
-printf("\n");	
+	
+	va_end(args);
+	printf("\n");
 }
