@@ -67,6 +67,7 @@ void print_all(const char * const format, ...)
 	char *separator = "";
 	va_list list;
 
+	/* tableau associant les types aux fonctions d'affichage */
 	type_txt_t type[] = {
 	{'c', print_char},
 	{'i', print_int},
