@@ -13,9 +13,11 @@ void free_list(list_t *head)
 	list_t *bfr;
 
 	while (head != NULL)
-	bfr = head->next;
-	free(head->str);
-	free(head);
+	{
+		bfr = head->next;
+		free(head->str);
+		free(head);
 
-	head = bfr;
+		head = bfr;
+	}
 }
