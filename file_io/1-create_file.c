@@ -13,14 +13,15 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int titi, lnin, wrtt;
+	int titi, lnin = 0;
+	int wrtt;
 
 	if (filename == NULL)
 	{
-		return (1);
+		return (-1);
 	}
 
-	titi = open(filename, O_APPEND | O_WRONLY);
+	titi = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 		if (titi == -1)
 		{
 			return (-1);
