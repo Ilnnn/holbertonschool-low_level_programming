@@ -3,7 +3,13 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
-
+/**
+ * main - copies the content of a file to another file
+ * @argc: number of arguments
+ * @argv: array of arguments
+ *
+ * Return: 0 on success, exits with codes 97-100 on failure
+ */
 int main(int argc, char *argv[])
 {
 	int fd_from, fd_to;
