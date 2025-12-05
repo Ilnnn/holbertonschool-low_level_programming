@@ -5,9 +5,9 @@
 #include <fcntl.h>
 #include <unistd.h>
 /**
- * append_text_to_file - Appends text at the end of a file
- * @filename: Name of the file to append to
- * @text_content: NULL-terminated string to add at the end of the file
+ * create_file - Creates a file with permissions rw-------
+ * @filename: Name of the file to create
+ * @text_content: NULL-terminated string to write into the file
  *
  * Return: 1 on success, -1 on failure
  */
