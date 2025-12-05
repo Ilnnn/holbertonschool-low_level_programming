@@ -4,7 +4,17 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-
+/**
+ * struct list_s - Singly linked list structure
+ * @str: String stored in the node (dynamically allocated)
+ * @len: Length of the string
+ * @next: Pointer to the next node in the list
+ *
+ * Description: Node structure for a singly linked list used in
+ *              the linked lists project. Each node contains a
+ *              dynamically allocated string, its length, and
+ *              a pointer to the next node.
+ */
 typedef struct list_s
 {
 	char *str;
