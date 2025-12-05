@@ -23,15 +23,16 @@ int main(int argc, char *argv[])
 	}
 
 	fd_from = open(argv[1], O_RDONLY);
+
 	fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 
 	while ((n_read = read(fd_from, buffer, 1024)) > 0)
-		{
-			write(fd_to, buffer, n_read);
-		}
+	{
+		write(fd_to, buffer, n_read);
+	}
 
-	close(fd_from);
-	close(fd_to);
+		close(fd_from);
+		close(fd_to);
 
 	return (0);
 }
